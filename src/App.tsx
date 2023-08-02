@@ -29,7 +29,7 @@ function App() {
     dispacth(getUserData());
     dispacth(getFiles());
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [status]);
 
   if (!user) {
     return (
@@ -77,7 +77,7 @@ function App() {
           {filesData?.items.map((file) => (
             <div className="lastFIlesContainerInfo">
               {file.media_type === 'image' ? (
-                <img src={`${file.preview}`} />
+                <img src={`${file?.preview}`} />
               ) : (
                 <img
                   className="fileIcon"
