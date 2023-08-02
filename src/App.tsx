@@ -20,18 +20,16 @@ function App() {
 
   useEffect(() => {
     dispacth(getUserToken(code as string));
-    if (token) {
-      dispacth(getUserData());
-    }
     dispacth(getFiles());
+    dispacth(getUserData());
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [code, user, token]);
+  }, [code, token]);
 
   useEffect(() => {
     dispacth(getUserData());
     dispacth(getFiles());
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [status]);
+  }, []);
 
   if (!user) {
     return (
