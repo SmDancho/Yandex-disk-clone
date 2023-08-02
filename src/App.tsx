@@ -31,7 +31,7 @@ function App() {
     dispacth(getUserData());
     dispacth(getFiles());
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [status, filesData?.limit]);
+  }, [status]);
 
   if (!user) {
     return (
