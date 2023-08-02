@@ -31,7 +31,7 @@ export const getUserToken = createAsyncThunk(
      {
         code:code,
         client_id: import.meta.env.VITE_CLIENT_ID,
-        client_secret:import.meta.env.VITE_CLIENT_SECRET,
+        client_secret:"335f255fc14b48fabbcc679f8ab32003",
         grant_type: "authorization_code"
       },
       { headers: { 'Content-type': 'application/x-www-form-urlencoded' } }

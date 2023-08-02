@@ -44,7 +44,7 @@ a {
   display: block;
   width: 36.6px;
   height: 36.6px;
-  background-image: url('assets/yendexIcon.svg');
+  background-image: url('../assets/yendexIcon.svg');
 }
 .title {
   margin: 20px 0;
@@ -96,7 +96,7 @@ input[type='file'] {
   display: block;
   width: 36.6px;
   height: 36.6px;
-  background-image: url('assets/yendexIcon.svg');
+  background-image: url('../assets/yendexIcon.svg');
 }
 .downloadBtn {
   width: 150px;
