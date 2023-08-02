@@ -77,7 +77,7 @@ function App() {
           {filesData?.items.map((file) => (
             <div className="lastFIlesContainerInfo">
               {file.media_type === 'image' ? (
-                <img src={`${file?.preview}`} />
+                <img src={`${file?.preview}`} rel="noopener noreferrer" />
               ) : (
                 <img
                   className="fileIcon"
@@ -87,7 +87,12 @@ function App() {
 
               <div className="FileName">{file.name}</div>
 
-              <a className="downloadBtn" href={`${file.file}`}>
+              <a
+                className="downloadBtn"
+                href={`${file.file}`}
+                download
+                rel="noopener noreferrer"
+              >
                 Скачать
               </a>
             </div>
