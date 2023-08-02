@@ -75,9 +75,9 @@ function App() {
         <h1 className="title">Последние загруженные файлы</h1>
         <div className="lastFIlesContainer">
           {filesData?.items.map((file) => (
-            <div className="lastFIlesContainerInfo">
+            <div className="lastFIlesContainerInfo" key={file.resource_id}>
               {file.media_type === 'image' ? (
-                <img src={`${file?.preview}`} rel="noopener noreferrer" />
+                <img src={`${file?.preview}`} />
               ) : (
                 <img
                   className="fileIcon"

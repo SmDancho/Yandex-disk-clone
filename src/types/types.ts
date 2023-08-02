@@ -25,4 +25,5 @@ export interface items {
   file: string;
   preview: string;
   media_type: string;
+  resource_id:string;
 }
